@@ -1,0 +1,34 @@
+{
+    "models_settings":{
+        "resize_width": 512,
+        "equalize": "True",
+        "patch_width": 512,
+        "patch_height": 512,
+        "label_to_value": {
+            "bouche_a_cle": 1, 
+            "rond": 2,
+            "carre": 3,
+            "grille": 4,
+            "carre_rond": 5,
+            "GAZ": 6,
+            "caniveau_grille": 7,
+            "bouche_de_lavage": 8
+        },
+        "train_dir":  "C:/Users/ABDEL/Downloads/unet-multiclass-pytorch-master/unet-multiclass-pytorch-master/data/images_train",
+        "test_dir": "C:/Users/ABDEL/Downloads/unet-multiclass-pytorch-master/unet-multiclass-pytorch-master/data/images_test",
+        "image_folder": "images",
+        "mask_folder": "masks"
+    },
+    "shape_segmentation": {
+        "patches_s96": {
+            "path": "C:/Users/ABDEL/Downloads/unet-multiclass-pytorch-master/unet-multiclass-pytorch-master/checkpoint",
+            "n_channels": 3,
+            "n_classes": 9,
+            "patch_height": 512, 
+            "patch_width": 512,
+            "stride_vertical": 0,
+            "stride_horizontal": 0,
+            "description": "unet model trained on size 512 patches"
+        }
+    }
+}
